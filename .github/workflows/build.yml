@@ -51,4 +51,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}/springboot-app:latest
+          tags: ghcr.io/demo/springboot-app:latest
