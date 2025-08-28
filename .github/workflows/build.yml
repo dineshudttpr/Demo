@@ -34,10 +34,10 @@ jobs:
 
 
       - name: Build image
-        run: ./gradlew bootBuildImage --imageName=ghcr.io/demo/myspringbootapp:latest
+        run: ./gradlew bootBuildImage --imageName=ghcr.io/${{ github.repository_owner }}/myspringbootapp:latest
 
       - name: Push Docker Image
-        run: docker push ghcr.io/demo/myspringbootapp:latest
+        run: docker push ghcr.io/${{ github.repository_owner }}/myspringbootapp:latest
 
       # Upload JAR as GitHub Artifact
 #      - name: Upload JAR as Artifact
